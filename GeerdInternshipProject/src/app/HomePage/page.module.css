@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poppins:wght@200&display=swap');
+
+
+.main {
+    display: flex;
+    background-color: #10141E;
+    padding: 1.2rem;
+    min-height: 100vh;
+    font-family: 'Outfit Thin thin';
+  }
+  .wraper{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .sideBar{
+    position: relative;
+    display: flex;
+    background-color: #161D2F;
+    width: 5em;
+    height: 95vh;
+    border-radius: .75rem;
+    
+  }
+  .vercelLogo{
+    margin: 1.5rem;
+  }
+  .sideBar li{
+    list-style: none;
+    margin: 2rem;
+  }
+  .menuIcon svg{
+    cursor: pointer;
+  }
+  .user{
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left:35%;
+    padding:0.1rem;
+    border:1px solid white;
+    border-radius: 50%;
+  }
+
+  .searchBar{
+    width: 70%;
+    padding: .7rem ;
+  }
+  .searchBar input{
+    background-color: inherit;
+    border: none;
+    width: inherit;
+    font-size: 1rem;
+    padding:0 0 .5rem ;
+    outline: none;
+  }
+  .searchBar input:focus{
+    border-bottom: 1px solid #5A698F;
+  }
+  .search{
+    position: relative;
+    top:5px;
+    margin:0 1.2rem;
+    align-self: center;
+  }
+  .searchBar button{
+    padding-top: .5rem;
+    display: inline-flex;
+    border:none;
+    background-color:inherit;
+  }
+
+
+ .scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+.trending{
+  margin:0 4rem 0 2rem ;
+ }
+ 
+ .trending h2{
+  padding: 1rem 0;
+ }
+ .trending .thumbnail{
+  z-index: 0;
+  border-radius: .8rem;
+  }
+  .scrollContainer {
+    overflow-x: auto;
+    position: relative;
+  }
+  
+  .elements{
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+  }
+  .recomended{
+    padding:0 2rem 0 0;
+    margin: 0 2rem;
+  }
+  .recomended h2{
+    padding:2rem 0rem;
+  }
+.gridContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1rem;
+  row-gap:2rem;
+  
+  @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (max-width: 500px) {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+.trendingItem{
+  border-radius: 15px;
+  position: relative;
+}
+.trendingItem .details{
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 3;
+}
+.gridContainer .Rthumbnail{
+  height: 80%;
+  width: 100%;
+  border-radius: .8rem;
+}
+
+.recommendedItem{
+  position: relative;
+  font-size: 14px;
+  border-radius: 8rem;
+}
+.recommendedItem h3{
+  font-size: 18px;
+}
+.bookmark{
+  position: absolute;
+    top: 0.8em;
+    right: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 30px;
+height:30px;
+background-color:rgb(22, 29, 47,0.6)  ;
+z-index: 20;
+border-radius: 50%; 
+}
+
+.boork{
+  border-radius:0;
+}
+.thumbnail{ 
+  position: relative;
+  z-index: 1;
+}
+.shadow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: linear-gradient(to top,black,transparent);
+  width: 100%;
+  height: 100%;
+  z-index: 2px;
+  border-radius: 0.8rem;
+}
+.play{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  background-color: rgb(245, 245, 245,0.3);
+  visibility: hidden;
+}
+.playLogo{
+margin: 0.4rem 0.6rem;
+}
+.play p{
+  padding:0.4rem 0.6rem;
+  opacity: 200% ;
+}
+.shadow:hover{
+cursor: pointer;
+.play{
+  visibility: visible;
+  transition-duration: 2ms;
+  transition-timing-function: ease-in;
+}
+
+}
+.play::before,
+    .play::after {
+        position: absolute;
+        border-radius: 50%; 
+    }
+    .play::before {
+      top: 0;
+      left:0 ;
+      border-top-right-radius: 0; 
+      border-bottom-right-radius: 0;
+  }
+
+  .play::after {
+      top: 0;
+      right: 0;
+      border-top-left-radius: 0; 
+      border-bottom-left-radius: 0;
+  }
+.recommendedItem .shadow{
+  background-image: none;
+}
+.recommendedItem .play{
+  font-size: 1.1rem;
+  bottom:1rem;
+}

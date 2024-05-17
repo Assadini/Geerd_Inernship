@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>this</title>
+</head>
+<body>
+    <div>
+    <button> hello</button>
+    </div>
+</body>
+</html>
+
+
+
+#include <unistd.h>
+
+    void	ft_print_alphabet (void)
+    {
+        char	 c;
+        int  a= 48;
+        c = a;
+        while (c <= 57)
+        {
+            write (1, &c, 1);
+             c++;
+        }
+    }
+
+
+
+
+    #include <unistd.h>
+
+        void	ft_print_alphabet (void)
+        {
+                write (1, "0123456789", 10);
+            
+        }

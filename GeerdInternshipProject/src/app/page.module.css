@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poppins:wght@200&display=swap');
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #10141E;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  font-family: 'Outfit Thin thin';
+}
+.vercelLogo{
+  margin:-2rem 0 6rem 0;
+}
+.containner{
+  background-color: #161D2F;
+  border-radius:20px;
+}
+
+.loginForm{
+  padding: 2rem;
+}
+.header{
+  padding:2rem 0 0 2rem;
+  font-size: 29px;
+}
+.loginForm input{
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid #5A698F;
+  width: 47vh;
+  height:6vh;
+  padding: 10px;
+}
+.loginForm button{
+  border:none;
+  border-radius: 5px;
+  background-color:#FC4747;
+  width: 47vh;
+  height:6vh;
+}
+.loginForm input:focus{
+  border: transparent;
+  border-bottom: 1px solid #5A698F;
+  outline: none;
+}
+.containner a{
+     color:#FC4747;
+     font-size:12px;
+    
+}
+.containner p{
+  font-size:12px;
+  margin-bottom:2rem;
+}
